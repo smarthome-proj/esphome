@@ -76,8 +76,6 @@ wifi:
 captive_portal:
 
 api:
-  encryption:
-    key: $api
   services:
     - service: ring_doorbell
       then:
@@ -85,9 +83,7 @@ api:
             id: media_out
             media_url: $doorbell_url
 
-ota:
-  password: $ota
-  id: my_ota
+
 
 esphome:
   name: ${name}

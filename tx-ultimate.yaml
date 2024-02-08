@@ -1,16 +1,7 @@
+#Kudos to https://github.com/SmartHome-yourself for the basis of this file
+
 substitutions:
-  dev_name: 133-tx5
-  ip_addr: 192.168.68.133
-  name: 133-tx5
-  friendly_name: 133-tx5
   doorbell_url: !secret doorbell_url
-  wifi_ssid: !secret wifi_ssid
-  wifi_pass: !secret wifi_pass
-  ap_pass: !secret ap_pass
-  default_gw: 192.168.68.1
-  subnet: 255.255.255.0
-  api: !secret api
-  ota: !secret ota
   
   relay_count: "3"
 
@@ -102,8 +93,8 @@ esphome:
   name: ${name}
   friendly_name: ${friendly_name}
   project:
-    name: smarthomeyourself.tx_ultimate
-    version: "1.0"
+    name: esphome.tx-ultimate
+    version: "0.9"
 
   on_boot:
     priority: -100
